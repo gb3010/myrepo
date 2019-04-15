@@ -1,6 +1,7 @@
 - name: Test user add
   hosts: all
   ansible_ssh_user: vagrant
+  gather_facts: no
   tasks:
     - name: Add user
       user:
