@@ -1,5 +1,6 @@
 - name: Test user add
   hosts: all
+  ansible_user=vagrant
   tasks:
     - name: Add user
       user:
