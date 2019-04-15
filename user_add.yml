@@ -1,7 +1,7 @@
 - name: Test user add
   hosts: all
   become: yes
-  become_user: vagrant
+  become_user: root
 #   ansible_become_user: root
 #   ansible_ssh_user: vagrant
   gather_facts: no
