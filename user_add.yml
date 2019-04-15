@@ -1,6 +1,8 @@
 - name: Test user add
   hosts: all
-  ansible_become_user: root
+  become: yes
+  become_user: vagrant
+#   ansible_become_user: root
 #   ansible_ssh_user: vagrant
   gather_facts: no
   tasks:
