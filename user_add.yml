@@ -1,6 +1,8 @@
-- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
-  user:
-    name: johnd
-    comment: John Doe
-    uid: 1040
-    group: wheel
+- name: Test user add
+  hosts: all
+  tasks:
+    - name: Add user
+      user:
+        name: johnd
+        group: wheel
+        uid: 1032
